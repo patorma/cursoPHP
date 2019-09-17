@@ -5,6 +5,11 @@ class Client extends Person{
     private $common;
     private $email;
 
+function __construct(){
+    echo 'Inicio';
+    $this->common = '';
+    $this->email = 'default@gmail.com';
+}
 function eat(){
  echo parent::talk();
 }
@@ -34,6 +39,10 @@ function eat(){
     {
         $this->email = $email;
        
+    }
+
+    function __destruct(){
+        echo 'Limpieza';
     }
 }
 

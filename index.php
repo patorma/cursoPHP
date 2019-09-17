@@ -16,8 +16,7 @@ $luren= new Client();
 //$luren->eat();
 $luren->setEmail('Correo@gmail.com');
 echo $luren->getEmail();
-$luren->setCommon(1);
-echo $luren->getCommon();
+
 
 $gael = new Employe();
 //S$gael->run();
