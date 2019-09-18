@@ -1,7 +1,8 @@
 <?php
 require_once('persona.php');
-
+require_once('operation.php');
 class Client extends Person{
+    use Operation;
     private $common;
     private $email;
 
@@ -44,6 +45,10 @@ function __construct(){
 
     function run(){
         echo 'Cliente corriendo';
+    }
+
+    function pay(){
+        echo 'El dinero que gaste fue: '.$this->plus(89,17);
     }
     function __destruct(){
         echo 'Limpieza';

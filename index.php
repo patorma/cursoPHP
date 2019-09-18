@@ -14,11 +14,8 @@ $jose->nationality = "Jose";
 $jose->age = "Jose";*/
 
 $luren= new Client();
-$luren->run();
-$gael= new Employe();
-$gael->run();
-$sodoku= new Provider();
-$sodoku->run();
+$luren->pay();
+echo $luren->plus(50,14);
 
 
 $gael = new Employe();
