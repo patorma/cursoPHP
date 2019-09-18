@@ -36,6 +36,76 @@
         }
     }
  
+
+       
+        public function getName()
+        {
+                return $this->name;
+        }
+
+      
+        public function setName($name)
+        {
+                $this->name = $name;
+
+                return $this;
+        }
+
+      
+        public function getLastName()
+        {
+                return $this->lastName;
+        }
+
+      
+        public function setLastName($lastName)
+        {
+                $this->lastName = $lastName;
+
+                return $this;
+        }
+
+      
+        public function getSex()
+        {
+                return $this->sex;
+        }
+
+       
+        public function setSex($sex)
+        {
+                $this->sex = $sex;
+
+                return $this;
+        }
+
+      
+        public function getNationality()
+        {
+                return $this->nationality;
+        }
+
+     
+        public function setNationality($nationality)
+        {
+                $this->nationality = $nationality;
+
+                return $this;
+        }
+
+       
+        public function getAge()
+        {
+                return $this->age;
+        }
+
+      
+        public function setAge($age)
+        {
+                $this->age = $age;
+
+                return $this;
+        }
     }
 
 

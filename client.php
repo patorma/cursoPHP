@@ -13,8 +13,6 @@ function __construct(){
 }
 
 
-
-   
     public function getCommon(): int
     {
         return $this->common;
@@ -49,6 +47,10 @@ function __construct(){
 
     function pay(){
         echo 'El dinero que gaste fue: '.$this->plus(89,17);
+    }
+
+    function say(Employe $employe){
+        echo "{$this->getName()} felicitame al chef {$employe->getName()} ";
     }
     function __destruct(){
         echo 'Limpieza';

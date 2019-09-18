@@ -14,11 +14,15 @@ $jose->nationality = "Jose";
 $jose->age = "Jose";*/
 
 $luren= new Client();
-$luren->pay();
-echo $luren->plus(50,14);
+$luren->setName('Luren');
 
 
 $gael = new Employe();
+$sudoku = new Provider();
+$sudoku->setName('Sudoku');
+$gael->setName('Gael');
+
+$luren->say($gael);
 //S$gael->run();
 Person::$color = "Azul";
 //funcion variable
