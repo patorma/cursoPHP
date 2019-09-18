@@ -1,5 +1,5 @@
 <?php
-   class Person {
+  abstract class Person {
         private $name;
         private  $lastName;
         private $sex;
@@ -8,10 +8,7 @@
         static $color = 'Rojo';
 
         
-    function run(){
-        echo 'Metodo de la clase padre';
-
-    }
+    abstract function run();
     function see(){
        $this->sendOrder('see');
     }

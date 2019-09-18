@@ -10,9 +10,7 @@ function __construct(){
     $this->common = '';
     $this->email = 'default@gmail.com';
 }
-function eat(){
- echo parent::talk();
-}
+
 
 
    
@@ -40,7 +38,13 @@ function eat(){
         $this->email = $email;
        
     }
+    function eat(){
+        echo parent::talk();
+       }
 
+    function run(){
+        echo 'Cliente corriendo';
+    }
     function __destruct(){
         echo 'Limpieza';
     }

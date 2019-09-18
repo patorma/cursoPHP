@@ -5,6 +5,9 @@ require_once('persona.php');
         private $position;
         private $schedule;
 
+    function run(){
+        echo 'EmpleadoS corriendo';
+    }
     function cook(){
 
     }

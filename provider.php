@@ -5,7 +5,9 @@ require_once('persona.php');
      private $account;
      private $bank;
 
-
+     function run(){
+        echo 'Proveedorcorriendo';
+    }
      function sendProducts(){
 
      }

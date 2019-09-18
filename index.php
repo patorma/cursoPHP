@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once('persona.php');
 require_once('client.php');
 require_once('employe.php');
-$jose = new Person();
+/* $jose = new Person(); */
 /* $jose->name = "Jose";
 $jose->lastName = "Lopez"; */
 /*$jose->sex = "Jose";
@@ -14,8 +14,7 @@ $jose->age = "Jose";*/
 
 $luren= new Client();
 //$luren->eat();
-$luren->setEmail('Correo@gmail.com');
-echo $luren->getEmail();
+$luren->run();
 
 
 $gael = new Employe();
