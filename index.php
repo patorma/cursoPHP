@@ -1,24 +1,24 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=1);//restricciones de tipo de datos
 //establece 
 
 require_once('persona.php');
-require_once('client.php');
+require_once('controller/client.php');
 require_once('employe.php');
-require_once('provider.php');
+require_once('controller/provider.php');
 /* $jose = new Person(); */
 /* $jose->name = "Jose";
 $jose->lastName = "Lopez"; */
 /*$jose->sex = "Jose";
 $jose->nationality = "Jose";
 $jose->age = "Jose";*/
-
-$luren= new Client();
+use controller as con;//importar namespace
+$luren= new con\Client();
 $luren->setName('Luren');
 
 
 $gael = new Employe();
-$sudoku = new Provider();
+$sudoku = new con\Provider();
 $sudoku->setName('Sudoku');
 $gael->setName('Gael');
 

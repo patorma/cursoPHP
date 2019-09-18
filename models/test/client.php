@@ -1,8 +1,9 @@
 <?php
+namespace models\test;
 require_once('persona.php');
 require_once('operation.php');
-class Client extends Person{
-    use Operation;
+class Client extends \Person{
+    use \Operation;
     private $common;
     private $email;
 
