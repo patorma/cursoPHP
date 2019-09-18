@@ -5,6 +5,7 @@ declare(strict_types=1);
 require_once('persona.php');
 require_once('client.php');
 require_once('employe.php');
+require_once('provider.php');
 /* $jose = new Person(); */
 /* $jose->name = "Jose";
 $jose->lastName = "Lopez"; */
@@ -13,8 +14,11 @@ $jose->nationality = "Jose";
 $jose->age = "Jose";*/
 
 $luren= new Client();
-//$luren->eat();
 $luren->run();
+$gael= new Employe();
+$gael->run();
+$sodoku= new Provider();
+$sodoku->run();
 
 
 $gael = new Employe();
