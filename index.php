@@ -2,10 +2,17 @@
 declare(strict_types=1);//restricciones de tipo de datos
 //establece 
 
-require_once('persona.php');
-require_once('controller/client.php');
-require_once('employe.php');
-require_once('controller/provider.php');
+
+require_once('autoload.php');
+
+(new AutoLoader())->load();
+
+
+//funcion para recibir todas las clases que no esten incluidas en el archivo
+function load($class){
+ echo $class;
+}
+spl_autoload_register('load');//entre parentesis se pone nombre load
 /* $jose = new Person(); */
 /* $jose->name = "Jose";
 $jose->lastName = "Lopez"; */
